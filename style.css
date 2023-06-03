@@ -1,0 +1,171 @@
+/* Transition animation for the search input */
+#searchInput {
+    transition: width 0.5s ease-in-out;
+  } 
+  
+  #searchInput:focus {
+    width: 200px;
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+  }
+  
+  /* Placeholder text color */
+  #searchInput::placeholder {
+    color: #999999;
+  }
+  
+  /* Complex CSS features for the table */
+  #mytable {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-collapse: separate;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #mytable td,
+  #mytable th {
+    padding: 10px;
+    transition: background-color 0.3s;
+    background-color: blanchedalmond;
+  }
+  
+  #mytable th {
+    background-color: red;
+    color: aliceblue;
+  }
+  
+  #mytable td:hover {
+    background-color: burlywood;
+  }
+  
+  /* Highlight the whole column */
+  #mytable th:hover,
+  #mytable th:hover ~ td {
+    background-color: #e9ecef;
+    transition: background-color 0.3s;
+  }
+  
+  #mytable th:hover ~ td {
+    transform: scale(0.9);
+  }
+  
+  /* Advanced CSS features */
+  /* Example of transform and gradient */
+  .navbar-brand {
+    transform: skew(-10deg);
+    background-image: linear-gradient(to right, #ff9a9e, #fad0c4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Example of transition and box-shadow */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Example of rounded corners and background color */
+  .dropdown-menu {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Example of hover effect and padding */
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #e9ecef;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Good looking features for dropdown items */
+  .dropdown-menu .dropdown-item {
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-menu .dropdown-item:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    background-color: #1be009;
+  }
+  
+  /* Background colors and gradient */
+  body {
+    background-color: #f1f1f1;
+  }
+  
+  #mytable td:hover {
+    transform: scale(1.25);
+    transition: 0.8s ease-in-out;
+  }
+  
+  #mytable td:hover span {
+    transform: scale(1.05);
+    transition: 0.8s ease-in-out;
+  }
+  
+  .container {
+    background-color: #504f50;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .dropdown-menu {
+    background-color: #f8f9fa;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #f60505;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Advanced features for the search input field */
+  .input-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .input-wrapper::after {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #999999;
+    pointer-events: none;
+  }
+  
+  #searchInput {
+    padding-right: 30px;
+    background-color: lightgreen;
+  }
+  
+  /* Input field animation */
+  #searchInput:focus {
+    width: 200px;
+  }
+  
+  #searchInput:focus + .input-wrapper::after {
+    color: #ff0000;
+  }
+  
+  /* Placeholder text animation */
+  #searchInput::placeholder {
+    color: #999999;
+    transition: color 0.3s;
+  }
+  
+  #searchInput:focus::placeholder {
+    color: transparent;
+  }
+  
